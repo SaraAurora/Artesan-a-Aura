@@ -1,8 +1,8 @@
-# PideLaCarta
+# Artesan-a-Aura
 
 ## Clonar Repositorio
-- `git clone git@gitlab.com:Delhipanda/PideLaCarta.git`
-Se creará una carpeta PideLaCarta en la carpeta donde esté la consola
+- `git clone https://github.com/SaraAurora/Artesan-a-Aura`
+Se creará una carpeta Artesan-a-Aura en la carpeta donde esté la consola
 
 **Generated from HotTowel Angular**
 
