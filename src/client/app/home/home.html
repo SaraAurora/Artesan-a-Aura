@@ -1,63 +1,111 @@
 <div class="container-fluid banner">
-    <div class="row">
-      <div class="col-xs-12 text-center">
-        <span class="grande wow bounceInDown " data-wow-duration="6s" data-wow-delay="0s" style="color: purple">Artesanía</span>
-        <br>
-        <br>
-        <span class="wow bounceInDown aura" data-wow-duration="6s" data-wow-delay="0s">Aura</span>
-       
-      </div>
-      <div class="col-xs-12 text-center">
-        <p class="chico" style="color: pink">moda, accesorios y más </p>
-      </div>
-      <p></p>
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <span class="grande wow bounceInDown " data-wow-duration="6s" data-wow-delay="0s" style="color: purple">Artesanía</span>
+      <br>
+      <br>
+      <span class="wow bounceInDown aura" data-wow-duration="6s" data-wow-delay="0s">Aura</span>
     </div>
+    <div class="col-xs-12 text-center">
+      <p class="chico" style="color: pink">moda, accesorios y más </p>
+    </div>
+    <p></p>
   </div>
-  <div class="top">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="imagenes/corchet5.jpg" alt="bikini">
-          <div class="carousel-caption">
-          </div>
+</div>
+<div class="top">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="imagenes/corchet5.jpg" alt="bikini">
+        <div class="carousel-caption">
         </div>
-        <div class="item">
-          <img src="imagenes/corchet3.jpg" alt="...">
-          <div class="carousel-caption">
-            ...
-          </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/corchet3.jpg" alt="...">
+        <div class="carousel-caption">
+          ...
         </div>
-        <div class="item">
-          <img src="imagenes/corchet2.jpg" alt="bikini">
-          <div class="carousel-caption">
-          </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/corchet2.jpg" alt="bikini">
+        <div class="carousel-caption">
         </div>
-        <div class="item">
-          <img src="imagenes/corchet0.jpg" alt="bikini">
-          <div class="carousel-caption">
-          </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/corchet0.jpg" alt="bikini">
+        <div class="carousel-caption">
         </div>
-        <div class="item">
-          <img src="imagenes/corchet6.jpg" alt="bikini">
-          <div class="carousel-caption">
-          </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/corchet6.jpg" alt="bikini">
+        <div class="carousel-caption">
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+    </div>
+  </div>
+</div>
+
+<div class="container paquetes" ng-style="vm.backgroundImg">
+  <div class="row">
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(imagenes/www/p1.jpg)' }; vm.mouseOver = 1" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 1 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="imagenes/www/p1.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(imagenes/www/p2.jpg)' }; vm.mouseOver = 2" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 2 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="imagenes/www/p2.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(imagenes/www/p3.jpg)' }; vm.mouseOver = 3" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 3 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="imagenes/www/p3.jpg">
+        </div>
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(imagenes/www/p4.jpg)' }; vm.mouseOver = 4" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 4 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="imagenes/www/p4.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(imagenes/www/p5.jpg)' }; vm.mouseOver = 5" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 5 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="imagenes/www/p5.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(imagenes/www/p1.jpg)' }; vm.mouseOver = 1" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 1 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="imagenes/www/p3.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

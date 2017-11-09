@@ -54,11 +54,6 @@
           transition: color 1s;
 }
 
-.navbar-brand:hover {
-  color: green;
-}
-
-
 .navbar-collapse {
   padding: 10px;
 }
@@ -141,3 +136,13 @@ nav li {
     text-align: center;
     border-left: 1px solid purple;
 }
+
+nav.navbar-findcond ul.navbar-nav a.red:hover {
+  color: red;
+}
+
+nav.navbar-findcond ul.dropdown-menu>li>a.red:hover {
+  background: red;
+  color: #fff;
+}
+
