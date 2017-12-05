@@ -30,7 +30,7 @@
 }
 
 .banner {
-  background-color: aliceblue;
+ 
   margin-top: 42px;
 }
 
@@ -83,7 +83,7 @@ nav.navbar-findcond ul.navbar-nav a:active {
 }
 
 nav.navbar-findcond ul.navbar-nav a:hover {
-  border-color: purple;
+  border-color: aqua;
 }
 
 nav.navbar-findcond li.divider {
@@ -116,7 +116,7 @@ nav.navbar-findcond ul.dropdown-menu>li>a {
 }
 
 nav.navbar-findcond ul.dropdown-menu>li>a:hover {
-  background: purple;
+  background: aqua;
   color: #fff;
 }
 
@@ -146,3 +146,51 @@ nav.navbar-findcond ul.dropdown-menu>li>a.red:hover {
   color: #fff;
 }
 
+.fondoamarillo:hover,
+.fondoamarillo:active,
+.fondoamarillo:focus {
+	background-color: #FFFF00 !important;
+}
+
+.bordeamarillo:hover,
+.bordeamarillo:active,
+.bordeamarillo:focus {
+	border-color: #FFFF00 !important;
+}
+.fondorojo:hover,
+.fondorojo:active,
+.fondorojo:focus {
+	background-color: red !important;
+}
+
+.borderojo:hover,
+.borderojo:active,
+.borderojo:focus {
+	border-color: red !important;
+}
+.fondoverde:hover,
+.fondoverde:active,
+.fondoverde:focus {
+	background-color: #18F165 !important;
+}
+
+.bordeverde:hover,
+.bordeverde:active,
+.bordeverde:focus {
+	border-color:  #18F165 !important;
+}
+.fondorosa:hover,
+.fondorosa:active,
+.fondorosa:focus {
+	background-color: #F580D0 !important;
+}
+
+.borderosa:hover,
+.borderosa:active,
+.borderosa:focus {
+	border-color: #F580D0 !important;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	border-color: aqua;
+}
